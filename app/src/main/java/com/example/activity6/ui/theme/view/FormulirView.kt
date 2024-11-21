@@ -125,7 +125,12 @@ fun FormulirView(
                 Text("Masukkan Alamat Anda")
             }
         )
+        Button(onClick ={
+            onClikButton(ListData)
 
+        },modifier = Modifier.padding(vertical = 10.dp) ) {
+            Text("Simpan")
+        }
 
     }
 
