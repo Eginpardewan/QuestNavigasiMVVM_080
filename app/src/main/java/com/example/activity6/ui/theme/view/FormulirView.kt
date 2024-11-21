@@ -78,6 +78,18 @@ fun FormulirView(
             }
         )
 
+        Row{
+            pilihanJK.forEach{selectedJK ->
+                Row (
+                    verticalAlignment = Alignment.CenterVertically){
+                    RadioButton(selected = jenisK == selectedJK,
+                        onClick = {
+                            jenisK = selectedJK
+                        })
+                    Text(selectedJK)
+                }}
+        }
+
 
 
     }
