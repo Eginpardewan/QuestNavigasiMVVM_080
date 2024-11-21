@@ -90,6 +90,41 @@ fun FormulirView(
                 }}
         }
 
+        TextField(
+            value = nohp,
+            onValueChange =  {nohp = it},
+            modifier = Modifier.fillMaxWidth(),
+            label = {
+                Text("No HP")
+            },
+            placeholder = {
+                Text("Masukkan No HP Anda")
+            }
+
+        )
+        TextField(
+            value = email,
+            onValueChange =  {email = it},
+            modifier = Modifier.fillMaxWidth(),
+            label = {
+                Text("Email")
+            },
+            placeholder = {
+                Text("Masukkan Email Anda")
+            }
+        )
+
+        TextField(
+            value = alamat,
+            onValueChange =  {alamat = it},
+            modifier = Modifier.fillMaxWidth(),
+            label = {
+                Text("Alamat")
+            },
+            placeholder = {
+                Text("Masukkan Alamat Anda")
+            }
+        )
 
 
     }
