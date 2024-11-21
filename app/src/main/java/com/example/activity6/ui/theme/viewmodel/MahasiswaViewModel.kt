@@ -13,5 +13,18 @@ class MahasiswaViewModel: ViewModel() {
 
     val  uistate: StateFlow<Mahasiswa> = _uistate.asStateFlow()
 
-
+    fun saveDataMahasiswa(
+        ls :MutableList<String>
+    ){
+        _uistate.update { data ->
+            data.copy(
+                nama = ls[0],
+                NIM = ls[1],
+                gender = ls[2],
+                noHp = ls[3],
+                email = ls[4],
+                alamat = ls[5]
+            )
+        }
+    }
 }
