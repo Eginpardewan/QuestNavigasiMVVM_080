@@ -45,7 +45,11 @@ fun TampilMahasiswaView(
             Judul = "Alamat",
             Isinya = mhs.alamat
         )
-
+        Button(onClick = {navController.popBackStack()},
+            modifier = Modifier.padding(16.dp))
+        {
+            Text("Kembali")
+        }
 
     }
 
